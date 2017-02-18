@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FC3500491E58CD1200D579D2 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3500481E58CD1200D579D2 /* TodayViewController.swift */; };
+		FC35004B1E58D0D300D579D2 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35004A1E58D0D300D579D2 /* settingsViewController.swift */; };
 		FC75CD961E576E1C002A29BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC75CD951E576E1C002A29BF /* AppDelegate.swift */; };
 		FC75CD9D1E576E1C002A29BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC75CD9B1E576E1C002A29BF /* Main.storyboard */; };
 		FC75CD9F1E576E1C002A29BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC75CD9E1E576E1C002A29BF /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		FC3500481E58CD1200D579D2 /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		FC35004A1E58D0D300D579D2 /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
 		FC75CD921E576E1C002A29BF /* Tabbed Reciply.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tabbed Reciply.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC75CD951E576E1C002A29BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC75CD9C1E576E1C002A29BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		FC75CD891E576E1C002A29BF = {
 			isa = PBXGroup;
 			children = (
+				FC35004A1E58D0D300D579D2 /* settingsViewController.swift */,
 				FC3500481E58CD1200D579D2 /* TodayViewController.swift */,
 				FC75CD941E576E1C002A29BF /* Tabbed Reciply */,
 				FC75CDAB1E576E1C002A29BF /* Tabbed ReciplyTests */,
@@ -264,6 +267,7 @@
 			files = (
 				FC75CD961E576E1C002A29BF /* AppDelegate.swift in Sources */,
 				FC3500491E58CD1200D579D2 /* TodayViewController.swift in Sources */,
+				FC35004B1E58D0D300D579D2 /* settingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

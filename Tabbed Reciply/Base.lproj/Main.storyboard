@@ -174,8 +174,11 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1500"/>
                     <connections>
+                        <outlet property="cookTimeLabel" destination="NPY-jV-WSj" id="WZg-ff-m6k"/>
+                        <outlet property="prepTimeLabel" destination="lW5-s0-Nyk" id="q3B-BD-gpy"/>
                         <outlet property="recipeDescriptionLabel" destination="QPJ-kk-bNz" id="fsg-DA-rnz"/>
                         <outlet property="recipeNameLabel" destination="htF-Yf-Ymt" id="nXf-7v-AyP"/>
+                        <outlet property="servingsLabel" destination="k59-rH-Szz" id="zoj-dq-pNT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -236,7 +239,7 @@
         <!--Schedule-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Tabbed_Reciply" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
