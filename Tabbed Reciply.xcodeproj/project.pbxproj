@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		FC3500491E58CD1200D579D2 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3500481E58CD1200D579D2 /* TodayViewController.swift */; };
 		FC35004B1E58D0D300D579D2 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35004A1E58D0D300D579D2 /* settingsViewController.swift */; };
+		FC51E2931E5B752A000D39B1 /* RecipeStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC51E2921E5B752A000D39B1 /* RecipeStepsViewController.swift */; };
+		FC51E2951E5B7555000D39B1 /* RecipePageItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC51E2941E5B7555000D39B1 /* RecipePageItemController.swift */; };
 		FC75CD961E576E1C002A29BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC75CD951E576E1C002A29BF /* AppDelegate.swift */; };
 		FC75CD9D1E576E1C002A29BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC75CD9B1E576E1C002A29BF /* Main.storyboard */; };
 		FC75CD9F1E576E1C002A29BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC75CD9E1E576E1C002A29BF /* Assets.xcassets */; };
@@ -37,6 +39,8 @@
 /* Begin PBXFileReference section */
 		FC3500481E58CD1200D579D2 /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		FC35004A1E58D0D300D579D2 /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
+		FC51E2921E5B752A000D39B1 /* RecipeStepsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipeStepsViewController.swift; path = "../Recipe Slider/Recipe Slider/RecipeStepsViewController.swift"; sourceTree = "<group>"; };
+		FC51E2941E5B7555000D39B1 /* RecipePageItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipePageItemController.swift; path = "../Recipe Slider/RecipePageItemController.swift"; sourceTree = "<group>"; };
 		FC75CD921E576E1C002A29BF /* Tabbed Reciply.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tabbed Reciply.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC75CD951E576E1C002A29BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC75CD9C1E576E1C002A29BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 		FC75CD891E576E1C002A29BF = {
 			isa = PBXGroup;
 			children = (
+				FC51E2941E5B7555000D39B1 /* RecipePageItemController.swift */,
+				FC51E2921E5B752A000D39B1 /* RecipeStepsViewController.swift */,
 				FC35004A1E58D0D300D579D2 /* settingsViewController.swift */,
 				FC3500481E58CD1200D579D2 /* TodayViewController.swift */,
 				FC75CD941E576E1C002A29BF /* Tabbed Reciply */,
@@ -265,7 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC51E2931E5B752A000D39B1 /* RecipeStepsViewController.swift in Sources */,
 				FC75CD961E576E1C002A29BF /* AppDelegate.swift in Sources */,
+				FC51E2951E5B7555000D39B1 /* RecipePageItemController.swift in Sources */,
 				FC3500491E58CD1200D579D2 /* TodayViewController.swift in Sources */,
 				FC35004B1E58D0D300D579D2 /* settingsViewController.swift in Sources */,
 			);

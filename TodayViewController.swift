@@ -20,6 +20,7 @@ class TodayViewController: UIViewController {
     @IBOutlet weak var prepTimeLabel: UILabel!
     @IBOutlet weak var cookTimeLabel: UILabel!
     @IBOutlet weak var servingsLabel: UILabel!
+// We need to add in a link to pull up the recipeImage here.
 
     
     override func viewDidLoad() {
