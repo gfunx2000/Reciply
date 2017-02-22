@@ -8,6 +8,7 @@
 
 import UIKit
 
+// All of these vars should be pulled from the database
 var recipeName = "The Recipe Name"
 var recipeDescription = "Here are the details about the meal."
 var prepTime = 20
@@ -24,6 +25,12 @@ class TodayViewController: UIViewController {
 
     
     override func viewDidLoad() {
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.shouldRotate = false // or false to disable rotation
+       
+        
+        
         super.viewDidLoad()
         recipeNameLabel.text = recipeName
         recipeDescriptionLabel.text = recipeDescription
