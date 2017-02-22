@@ -26,8 +26,8 @@ class TodayViewController: UIViewController {
     
     override func viewDidLoad() {
         
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.shouldRotate = false // or false to disable rotation
+//        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+//        appDelegate.shouldRotate = false // or false to disable rotation
        
         
         
