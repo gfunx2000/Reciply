@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC08164F1E5D5BB100974CE9 /* GroceryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC08164E1E5D5BB100974CE9 /* GroceryListViewController.swift */; };
 		FC3500491E58CD1200D579D2 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3500481E58CD1200D579D2 /* TodayViewController.swift */; };
 		FC35004B1E58D0D300D579D2 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35004A1E58D0D300D579D2 /* settingsViewController.swift */; };
 		FC51E2931E5B752A000D39B1 /* RecipeStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC51E2921E5B752A000D39B1 /* RecipeStepsViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC08164E1E5D5BB100974CE9 /* GroceryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListViewController.swift; sourceTree = "<group>"; };
 		FC3500481E58CD1200D579D2 /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		FC35004A1E58D0D300D579D2 /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
 		FC51E2921E5B752A000D39B1 /* RecipeStepsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipeStepsViewController.swift; path = "../Recipe Slider/Recipe Slider/RecipeStepsViewController.swift"; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		FC75CD891E576E1C002A29BF = {
 			isa = PBXGroup;
 			children = (
+				FC08164E1E5D5BB100974CE9 /* GroceryListViewController.swift */,
 				FC51E2941E5B7555000D39B1 /* RecipePageItemController.swift */,
 				FC51E2921E5B752A000D39B1 /* RecipeStepsViewController.swift */,
 				FC35004A1E58D0D300D579D2 /* settingsViewController.swift */,
@@ -273,6 +276,7 @@
 			files = (
 				FC51E2931E5B752A000D39B1 /* RecipeStepsViewController.swift in Sources */,
 				FC75CD961E576E1C002A29BF /* AppDelegate.swift in Sources */,
+				FC08164F1E5D5BB100974CE9 /* GroceryListViewController.swift in Sources */,
 				FC51E2951E5B7555000D39B1 /* RecipePageItemController.swift in Sources */,
 				FC3500491E58CD1200D579D2 /* TodayViewController.swift in Sources */,
 				FC35004B1E58D0D300D579D2 /* settingsViewController.swift in Sources */,
