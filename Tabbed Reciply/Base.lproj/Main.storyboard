@@ -266,8 +266,8 @@
                                     <constraint firstAttribute="height" constant="60" id="iCb-CI-5Rj"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Groceries" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAt-pL-ukG">
-                                <rect key="frame" x="0.0" y="20" width="375" height="38"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Groceries" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAt-pL-ukG">
+                                <rect key="frame" x="0.0" y="20" width="375" height="35"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="28"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -275,6 +275,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wAt-pL-ukG" firstAttribute="bottom" secondItem="ury-ld-Pz7" secondAttribute="bottom" constant="-5" id="7Lx-BP-Cs4"/>
                             <constraint firstAttribute="trailing" secondItem="ury-ld-Pz7" secondAttribute="trailing" id="DIC-AM-5hN"/>
                             <constraint firstItem="ury-ld-Pz7" firstAttribute="leading" secondItem="adg-Hh-2m4" secondAttribute="leading" id="O0G-cQ-iw4"/>
                             <constraint firstItem="ury-ld-Pz7" firstAttribute="top" secondItem="adg-Hh-2m4" secondAttribute="top" id="ale-p7-7vW"/>
@@ -314,10 +315,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKv-yw-bqm">
-                                <rect key="frame" x="0.0" y="20" width="375" height="38"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="DsN-1K-96g"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="21.5" width="375" height="33.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="28"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -326,12 +324,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="MKv-yw-bqm" firstAttribute="leading" secondItem="5v4-EN-ml7" secondAttribute="leading" id="1Tn-8D-JdS"/>
-                            <constraint firstItem="MKv-yw-bqm" firstAttribute="top" secondItem="g7P-hL-Ebn" secondAttribute="bottom" id="CnC-wT-xeo"/>
                             <constraint firstAttribute="trailing" secondItem="egu-6Q-kbZ" secondAttribute="trailing" id="SP5-iW-ISs"/>
                             <constraint firstAttribute="trailing" secondItem="MKv-yw-bqm" secondAttribute="trailing" id="TcW-ol-Eht"/>
                             <constraint firstItem="xq7-9W-1P4" firstAttribute="top" secondItem="iC8-5V-zQP" secondAttribute="bottom" constant="253" id="Tvd-kG-wtx"/>
                             <constraint firstItem="iC8-5V-zQP" firstAttribute="leading" secondItem="5v4-EN-ml7" secondAttribute="leadingMargin" constant="124" id="XJR-V7-gyj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iC8-5V-zQP" secondAttribute="trailing" constant="125" id="ch4-Ep-0EP"/>
+                            <constraint firstItem="MKv-yw-bqm" firstAttribute="bottom" secondItem="egu-6Q-kbZ" secondAttribute="bottom" constant="-5" id="mmU-gp-V82"/>
                             <constraint firstItem="egu-6Q-kbZ" firstAttribute="top" secondItem="5v4-EN-ml7" secondAttribute="top" id="rh0-2f-VpC"/>
                             <constraint firstItem="egu-6Q-kbZ" firstAttribute="leading" secondItem="5v4-EN-ml7" secondAttribute="leading" id="ye4-kv-mzX"/>
                         </constraints>
@@ -378,34 +376,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WqL-ia-436">
-                                <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rtT-hH-pRu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THIS WEEK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lL-Tg-GJG">
-                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="50"/>
-                                        <color key="backgroundColor" red="0.53333333329999999" green="0.69019607839999997" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stO-5S-uyz">
-                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
-                                        <color key="backgroundColor" red="0.53333333333333333" green="0.69019607843137254" blue="0.29411764705882354" alpha="0.5" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="NEXT WEEK">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmv-pV-ehS">
+                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="60"/>
+                                        <state key="normal" backgroundImage="Left Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6x-Oj-f6h">
+                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="60"/>
+                                        <state key="normal" backgroundImage="Right Button">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="8FA-6c-FO7"/>
+                                    <constraint firstAttribute="height" constant="60" id="Otz-id-iBu"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhW-1z-P2L">
+                                <rect key="frame" x="218" y="21.5" width="127" height="33.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This Week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3a-iA-Bvv">
+                                <rect key="frame" x="33" y="21.5" width="121.5" height="33.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="WqL-ia-436" secondAttribute="trailing" id="90q-Db-np8"/>
-                            <constraint firstItem="WqL-ia-436" firstAttribute="leading" secondItem="5sU-jM-rNr" secondAttribute="leading" id="9kG-C2-Jb8"/>
-                            <constraint firstItem="WqL-ia-436" firstAttribute="top" secondItem="Qox-fh-fC9" secondAttribute="bottom" id="pT4-rS-H14"/>
+                            <constraint firstItem="rtT-hH-pRu" firstAttribute="leading" secondItem="5sU-jM-rNr" secondAttribute="leading" id="ARQ-lD-Hdk"/>
+                            <constraint firstItem="jhW-1z-P2L" firstAttribute="bottom" secondItem="y6x-Oj-f6h" secondAttribute="bottom" constant="-5" id="WKx-ja-V1x"/>
+                            <constraint firstItem="jhW-1z-P2L" firstAttribute="centerX" secondItem="y6x-Oj-f6h" secondAttribute="centerX" id="p8L-rs-kWb"/>
+                            <constraint firstAttribute="trailing" secondItem="rtT-hH-pRu" secondAttribute="trailing" id="pbj-XG-IwV"/>
+                            <constraint firstItem="rtT-hH-pRu" firstAttribute="top" secondItem="5sU-jM-rNr" secondAttribute="top" id="rUO-Op-fM3"/>
+                            <constraint firstItem="s3a-iA-Bvv" firstAttribute="bottom" secondItem="bmv-pV-ehS" secondAttribute="bottom" constant="-5" id="vUk-GW-csI"/>
+                            <constraint firstItem="s3a-iA-Bvv" firstAttribute="centerX" secondItem="bmv-pV-ehS" secondAttribute="centerX" id="xGc-YX-kIy"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Schedule" image="Calendar" id="fMN-Ot-puc"/>
@@ -511,7 +521,9 @@
         <image name="Background for Text" width="306" height="132"/>
         <image name="Calendar" width="30" height="30"/>
         <image name="Grocery" width="30" height="30"/>
+        <image name="Left Button" width="160" height="71"/>
         <image name="Rectangle 3" width="320" height="71"/>
+        <image name="Right Button" width="160" height="71"/>
         <image name="Settings" width="30" height="30"/>
         <image name="Today" width="30" height="30"/>
         <image name="X Button 2" width="335" height="335"/>
