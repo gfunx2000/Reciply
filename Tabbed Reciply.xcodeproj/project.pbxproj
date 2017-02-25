@@ -10,8 +10,13 @@
 		FC51E2931E5B752A000D39B1 /* RecipeStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC51E2921E5B752A000D39B1 /* RecipeStepsViewController.swift */; };
 		FC51E2951E5B7555000D39B1 /* RecipePageItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC51E2941E5B7555000D39B1 /* RecipePageItemController.swift */; };
 		FC66C3181E61350900D53789 /* GroceryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C3171E61350900D53789 /* GroceryListViewController.swift */; };
-		FC66C31A1E61351700D53789 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C3191E61351700D53789 /* settingsViewController.swift */; };
+		FC66C31A1E61351700D53789 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C3191E61351700D53789 /* SettingsViewController.swift */; };
 		FC66C31C1E61353600D53789 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C31B1E61353600D53789 /* TodayViewController.swift */; };
+		FC66C3211E61537E00D53789 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C3201E61537E00D53789 /* ScheduleViewController.swift */; };
+		FC66C3231E61572900D53789 /* TodaysMealData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C3221E61572900D53789 /* TodaysMealData.swift */; };
+		FC66C3251E61573700D53789 /* NextWeekData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C3241E61573700D53789 /* NextWeekData.swift */; };
+		FC66C3271E61575A00D53789 /* ThisWeekData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C3261E61575A00D53789 /* ThisWeekData.swift */; };
+		FC66C32A1E6157B200D53789 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C3291E6157B200D53789 /* UserData.swift */; };
 		FC75CD961E576E1C002A29BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC75CD951E576E1C002A29BF /* AppDelegate.swift */; };
 		FC75CD9D1E576E1C002A29BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC75CD9B1E576E1C002A29BF /* Main.storyboard */; };
 		FC75CD9F1E576E1C002A29BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC75CD9E1E576E1C002A29BF /* Assets.xcassets */; };
@@ -41,8 +46,13 @@
 		FC51E2921E5B752A000D39B1 /* RecipeStepsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipeStepsViewController.swift; path = "../Recipe Slider/Recipe Slider/RecipeStepsViewController.swift"; sourceTree = "<group>"; };
 		FC51E2941E5B7555000D39B1 /* RecipePageItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipePageItemController.swift; path = "../Recipe Slider/RecipePageItemController.swift"; sourceTree = "<group>"; };
 		FC66C3171E61350900D53789 /* GroceryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroceryListViewController.swift; path = "View Controllers/GroceryListViewController.swift"; sourceTree = "<group>"; };
-		FC66C3191E61351700D53789 /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = settingsViewController.swift; path = "View Controllers/settingsViewController.swift"; sourceTree = "<group>"; };
+		FC66C3191E61351700D53789 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "View Controllers/SettingsViewController.swift"; sourceTree = "<group>"; };
 		FC66C31B1E61353600D53789 /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodayViewController.swift; path = "View Controllers/TodayViewController.swift"; sourceTree = "<group>"; };
+		FC66C3201E61537E00D53789 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		FC66C3221E61572900D53789 /* TodaysMealData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodaysMealData.swift; sourceTree = "<group>"; };
+		FC66C3241E61573700D53789 /* NextWeekData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextWeekData.swift; sourceTree = "<group>"; };
+		FC66C3261E61575A00D53789 /* ThisWeekData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThisWeekData.swift; sourceTree = "<group>"; };
+		FC66C3291E6157B200D53789 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		FC75CD921E576E1C002A29BF /* Tabbed Reciply.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tabbed Reciply.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC75CD951E576E1C002A29BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Tabbed Reciply/AppDelegate.swift"; sourceTree = "<group>"; };
 		FC75CD9C1E576E1C002A29BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,8 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				FC66C31B1E61353600D53789 /* TodayViewController.swift */,
-				FC66C3191E61351700D53789 /* settingsViewController.swift */,
+				FC66C3201E61537E00D53789 /* ScheduleViewController.swift */,
 				FC66C3171E61350900D53789 /* GroceryListViewController.swift */,
+				FC66C3191E61351700D53789 /* SettingsViewController.swift */,
 				FC51E2941E5B7555000D39B1 /* RecipePageItemController.swift */,
 				FC51E2921E5B752A000D39B1 /* RecipeStepsViewController.swift */,
 			);
@@ -103,9 +114,21 @@
 			name = Storyboards;
 			sourceTree = "<group>";
 		};
+		FC66C3281E61576200D53789 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FC66C3221E61572900D53789 /* TodaysMealData.swift */,
+				FC66C3261E61575A00D53789 /* ThisWeekData.swift */,
+				FC66C3241E61573700D53789 /* NextWeekData.swift */,
+				FC66C3291E6157B200D53789 /* UserData.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		FC75CD891E576E1C002A29BF = {
 			isa = PBXGroup;
 			children = (
+				FC66C3281E61576200D53789 /* Data */,
 				FC66C31E1E61356000D53789 /* View Controllers */,
 				FC66C31F1E61359A00D53789 /* Storyboards */,
 				FC75CD9E1E576E1C002A29BF /* Assets.xcassets */,
@@ -283,11 +306,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC51E2931E5B752A000D39B1 /* RecipeStepsViewController.swift in Sources */,
+				FC66C3271E61575A00D53789 /* ThisWeekData.swift in Sources */,
 				FC66C31C1E61353600D53789 /* TodayViewController.swift in Sources */,
 				FC66C3181E61350900D53789 /* GroceryListViewController.swift in Sources */,
 				FC75CD961E576E1C002A29BF /* AppDelegate.swift in Sources */,
+				FC66C32A1E6157B200D53789 /* UserData.swift in Sources */,
+				FC66C3251E61573700D53789 /* NextWeekData.swift in Sources */,
+				FC66C3231E61572900D53789 /* TodaysMealData.swift in Sources */,
 				FC51E2951E5B7555000D39B1 /* RecipePageItemController.swift in Sources */,
-				FC66C31A1E61351700D53789 /* settingsViewController.swift in Sources */,
+				FC66C3211E61537E00D53789 /* ScheduleViewController.swift in Sources */,
+				FC66C31A1E61351700D53789 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

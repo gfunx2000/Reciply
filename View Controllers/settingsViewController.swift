@@ -9,5 +9,5 @@
 import UIKit
 
 
-var defaultServings = 4
+
 

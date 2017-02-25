@@ -272,13 +272,21 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Nxb-3h-y5g">
+                                <rect key="frame" x="0.0" y="60" width="375" height="558"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wAt-pL-ukG" firstAttribute="bottom" secondItem="ury-ld-Pz7" secondAttribute="bottom" constant="-5" id="7Lx-BP-Cs4"/>
+                            <constraint firstItem="Nxb-3h-y5g" firstAttribute="leading" secondItem="adg-Hh-2m4" secondAttribute="leading" id="BKj-la-aHX"/>
                             <constraint firstAttribute="trailing" secondItem="ury-ld-Pz7" secondAttribute="trailing" id="DIC-AM-5hN"/>
                             <constraint firstItem="ury-ld-Pz7" firstAttribute="leading" secondItem="adg-Hh-2m4" secondAttribute="leading" id="O0G-cQ-iw4"/>
+                            <constraint firstAttribute="trailing" secondItem="Nxb-3h-y5g" secondAttribute="trailing" id="WqI-dc-y3g"/>
                             <constraint firstItem="ury-ld-Pz7" firstAttribute="top" secondItem="adg-Hh-2m4" secondAttribute="top" id="ale-p7-7vW"/>
+                            <constraint firstItem="G8J-JA-b4m" firstAttribute="top" secondItem="Nxb-3h-y5g" secondAttribute="bottom" id="aur-kd-vDL"/>
+                            <constraint firstItem="Nxb-3h-y5g" firstAttribute="top" secondItem="ury-ld-Pz7" secondAttribute="bottom" id="e8r-FS-3NY"/>
                             <constraint firstAttribute="trailing" secondItem="wAt-pL-ukG" secondAttribute="trailing" id="lWZ-QY-Mog"/>
                             <constraint firstItem="wAt-pL-ukG" firstAttribute="top" secondItem="Xu3-dF-Rns" secondAttribute="bottom" id="lcT-30-soD"/>
                             <constraint firstItem="wAt-pL-ukG" firstAttribute="leading" secondItem="adg-Hh-2m4" secondAttribute="leading" id="qZG-Kj-2Y6"/>
@@ -379,11 +387,11 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rtT-hH-pRu">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmv-pV-ehS">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmv-pV-ehS">
                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="60"/>
                                         <state key="normal" backgroundImage="Left Button"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6x-Oj-f6h">
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6x-Oj-f6h">
                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="60"/>
                                         <state key="normal" backgroundImage="Right Button">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -529,6 +537,6 @@
         <image name="X Button 2" width="335" height="335"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0ef-Ws-eGz"/>
+        <segue reference="tA4-SV-ZOv"/>
     </inferredMetricsTieBreakers>
 </document>
