@@ -9,10 +9,11 @@
 import UIKit
 
 // All of these vars should be pulled from the database
-var recipeName = "The Recipe Name"
-var recipeDescription = "Here are the details about the meal."
-var prepTime = 20
-var cookTime = 40
+var recipeName = "Ravioli with Lemon Basil Butter Sauce"
+var recipeDescription = "The lemon basil butter sauce will knock your socks off! And the best part? You can have this dish on your dinner table in less than 30 minutes!"
+var prepTime = 10
+var cookTime = 15
+// Pull in recipe picture here
 
 class TodayViewController: UIViewController {
     
