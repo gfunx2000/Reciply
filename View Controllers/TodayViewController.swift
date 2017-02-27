@@ -8,17 +8,10 @@
 
 import UIKit
 
-// All of these vars should be pulled from the database and will actually be in TodaysMealData.swift
-var recipeName = "Blackened Catfish Tacos"
-var recipePicture = "1_main.jpg"
-var prepTime = 10
-var cookTime = 15
-var todaysServings = defaultServings
-var recipeDescription = "The lemon basil butter sauce will knock your socks off! And the best part? You can have this dish on your dinner table in less than 30 minutes!"
-
 // View Controller that controls the today page.
 class TodayViewController: UIViewController {
     
+    // These are the connections to each of the labels in the today page
     @IBOutlet weak var recipeNameLabel: UILabel!
     @IBOutlet weak var recipeImage: UIImageView!
     @IBOutlet weak var prepTimeLabel: UILabel!
@@ -33,7 +26,8 @@ class TodayViewController: UIViewController {
 //      appDelegate.shouldRotate = false // or false to disable rotation
         
         
-        
+        // This sets the labels for the page to show the current day's information
+        // The data for this comes from TodaysMealData
         super.viewDidLoad()
         recipeNameLabel.text = recipeName
         recipeImage.image = UIImage(named: recipePicture)
