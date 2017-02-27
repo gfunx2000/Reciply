@@ -8,40 +8,43 @@
 
 import UIKit
 
-// All of these vars should be pulled from the database
-var recipeName = "Ravioli with Lemon Basil Butter Sauce"
-var recipeDescription = "The lemon basil butter sauce will knock your socks off! And the best part? You can have this dish on your dinner table in less than 30 minutes!"
+// All of these vars should be pulled from the database and will actually be in TodaysMealData.swift
+var recipeName = "Blackened Catfish Tacos"
+var recipePicture = "1_main.jpg"
 var prepTime = 10
 var cookTime = 15
-// Pull in recipe picture here
+var todaysServings = defaultServings
+var recipeDescription = "The lemon basil butter sauce will knock your socks off! And the best part? You can have this dish on your dinner table in less than 30 minutes!"
 
+// View Controller that controls the today page.
 class TodayViewController: UIViewController {
     
     @IBOutlet weak var recipeNameLabel: UILabel!
-    @IBOutlet weak var recipeDescriptionLabel: UILabel!
+    @IBOutlet weak var recipeImage: UIImageView!
     @IBOutlet weak var prepTimeLabel: UILabel!
     @IBOutlet weak var cookTimeLabel: UILabel!
     @IBOutlet weak var servingsLabel: UILabel!
-// We need to add in a link to pull up the recipeImage here.
-
+    @IBOutlet weak var recipeDescriptionLabel: UILabel!
+    
     
     override func viewDidLoad() {
         
-//        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-//        appDelegate.shouldRotate = false // or false to disable rotation
-       
+//      let appDelegate = UIApplication.shared.delegate as! AppDelegate
+//      appDelegate.shouldRotate = false // or false to disable rotation
+        
         
         
         super.viewDidLoad()
         recipeNameLabel.text = recipeName
-        recipeDescriptionLabel.text = recipeDescription
+        recipeImage.image = UIImage(named: recipePicture)
         prepTimeLabel.text = String(prepTime)
         cookTimeLabel.text = String(cookTime)
-        servingsLabel.text = String(defaultServings)
+        servingsLabel.text = String(todaysServings)
+        recipeDescriptionLabel.text = recipeDescription
     }
     
     
-
+    
     
     
 }

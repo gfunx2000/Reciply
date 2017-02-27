@@ -14,3 +14,9 @@ import Foundation
 //var prepTime = 10
 //var cookTime = 15
 //// var to Pull in recipe picture here (make it pull from assets by name for now)
+
+//
+//private let contentWords = ["This is the first recipe step",
+//                            "This is the second recipe step",
+//                            "This is the third receipe step",
+//                            "This is the fourth recipe step"]

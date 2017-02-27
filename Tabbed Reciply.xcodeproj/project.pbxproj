@@ -10,7 +10,6 @@
 		FC51E2931E5B752A000D39B1 /* RecipeStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC51E2921E5B752A000D39B1 /* RecipeStepsViewController.swift */; };
 		FC51E2951E5B7555000D39B1 /* RecipePageItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC51E2941E5B7555000D39B1 /* RecipePageItemController.swift */; };
 		FC66C3181E61350900D53789 /* GroceryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C3171E61350900D53789 /* GroceryListViewController.swift */; };
-		FC66C31A1E61351700D53789 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C3191E61351700D53789 /* SettingsViewController.swift */; };
 		FC66C31C1E61353600D53789 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C31B1E61353600D53789 /* TodayViewController.swift */; };
 		FC66C3211E61537E00D53789 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C3201E61537E00D53789 /* ScheduleViewController.swift */; };
 		FC66C3231E61572900D53789 /* TodaysMealData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C3221E61572900D53789 /* TodaysMealData.swift */; };
@@ -46,7 +45,6 @@
 		FC51E2921E5B752A000D39B1 /* RecipeStepsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipeStepsViewController.swift; path = "../Recipe Slider/Recipe Slider/RecipeStepsViewController.swift"; sourceTree = "<group>"; };
 		FC51E2941E5B7555000D39B1 /* RecipePageItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipePageItemController.swift; path = "../Recipe Slider/RecipePageItemController.swift"; sourceTree = "<group>"; };
 		FC66C3171E61350900D53789 /* GroceryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroceryListViewController.swift; path = "View Controllers/GroceryListViewController.swift"; sourceTree = "<group>"; };
-		FC66C3191E61351700D53789 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "View Controllers/SettingsViewController.swift"; sourceTree = "<group>"; };
 		FC66C31B1E61353600D53789 /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodayViewController.swift; path = "View Controllers/TodayViewController.swift"; sourceTree = "<group>"; };
 		FC66C3201E61537E00D53789 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		FC66C3221E61572900D53789 /* TodaysMealData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodaysMealData.swift; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 				FC66C31B1E61353600D53789 /* TodayViewController.swift */,
 				FC66C3201E61537E00D53789 /* ScheduleViewController.swift */,
 				FC66C3171E61350900D53789 /* GroceryListViewController.swift */,
-				FC66C3191E61351700D53789 /* SettingsViewController.swift */,
 				FC51E2941E5B7555000D39B1 /* RecipePageItemController.swift */,
 				FC51E2921E5B752A000D39B1 /* RecipeStepsViewController.swift */,
 			);
@@ -315,7 +312,6 @@
 				FC66C3231E61572900D53789 /* TodaysMealData.swift in Sources */,
 				FC51E2951E5B7555000D39B1 /* RecipePageItemController.swift in Sources */,
 				FC66C3211E61537E00D53789 /* ScheduleViewController.swift in Sources */,
-				FC66C31A1E61351700D53789 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

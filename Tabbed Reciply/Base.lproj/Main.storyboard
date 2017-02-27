@@ -22,13 +22,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" maximumZoomScale="3" translatesAutoresizingMaskIntoConstraints="NO" id="Ght-2V-HQv">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="3" translatesAutoresizingMaskIntoConstraints="NO" id="Ght-2V-HQv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wjk-GV-Bgk">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="859"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2_Main" translatesAutoresizingMaskIntoConstraints="NO" id="D09-Iy-c0N" userLabel="Meal Picture">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1_main" translatesAutoresizingMaskIntoConstraints="NO" id="D09-Iy-c0N" userLabel="Meal Picture">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Or-cz-R0v" userLabel="Cook Now Button">
@@ -141,9 +141,9 @@
                                             <constraint firstAttribute="trailing" secondItem="VBO-C6-kf7" secondAttribute="trailing" id="YhY-vj-Ntq"/>
                                             <constraint firstItem="oTI-OZ-Xw5" firstAttribute="leading" secondItem="wjk-GV-Bgk" secondAttribute="leading" constant="-10" id="bUx-Yc-6Ir"/>
                                             <constraint firstAttribute="trailing" secondItem="6Or-cz-R0v" secondAttribute="trailing" id="eAz-Af-AMd"/>
-                                            <constraint firstItem="htF-Yf-Ymt" firstAttribute="bottom" secondItem="D09-Iy-c0N" secondAttribute="bottom" id="fWc-ok-aAu"/>
                                             <constraint firstItem="6Or-cz-R0v" firstAttribute="top" secondItem="QPJ-kk-bNz" secondAttribute="bottom" constant="50" id="m6g-sE-dN5"/>
                                             <constraint firstAttribute="bottom" secondItem="6Or-cz-R0v" secondAttribute="bottom" id="mYp-tM-ZnQ"/>
+                                            <constraint firstItem="htF-Yf-Ymt" firstAttribute="bottom" secondItem="D09-Iy-c0N" secondAttribute="bottom" id="pPn-ty-O6m"/>
                                             <constraint firstAttribute="trailing" secondItem="Y5d-Wm-hIk" secondAttribute="trailing" constant="30" id="rqk-bg-Afd"/>
                                             <constraint firstItem="6Or-cz-R0v" firstAttribute="leading" secondItem="wjk-GV-Bgk" secondAttribute="leading" id="snq-Qu-gx3"/>
                                             <constraint firstItem="htF-Yf-Ymt" firstAttribute="height" secondItem="oTI-OZ-Xw5" secondAttribute="height" id="uKD-Oe-bZZ"/>
@@ -178,13 +178,14 @@
                         <outlet property="cookTimeLabel" destination="NPY-jV-WSj" id="WZg-ff-m6k"/>
                         <outlet property="prepTimeLabel" destination="lW5-s0-Nyk" id="q3B-BD-gpy"/>
                         <outlet property="recipeDescriptionLabel" destination="QPJ-kk-bNz" id="fsg-DA-rnz"/>
+                        <outlet property="recipeImage" destination="D09-Iy-c0N" id="sVz-PV-qEk"/>
                         <outlet property="recipeNameLabel" destination="htF-Yf-Ymt" id="nXf-7v-AyP"/>
                         <outlet property="servingsLabel" destination="k59-rH-Szz" id="zoj-dq-pNT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="797.60000000000002" y="-1052.0239880059971"/>
+            <point key="canvasLocation" x="798" y="-1659"/>
         </scene>
         <!--Gather Ingredients-->
         <scene sceneID="Vfr-oM-RHA">
@@ -448,7 +449,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EG6-mn-U2y" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3218" y="-1053"/>
+            <point key="canvasLocation" x="3286" y="-1052"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="lXL-pH-Ebt">
@@ -525,7 +526,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="2_Main" width="480" height="720"/>
+        <image name="1_main" width="1248" height="2208"/>
         <image name="Background for Text" width="306" height="132"/>
         <image name="Calendar" width="30" height="30"/>
         <image name="Grocery" width="30" height="30"/>
