@@ -16,10 +16,10 @@ import Foundation
 // It is the current day's recipe information
 var recipeName = "Blackened Catfish Tacos"
 var recipePicture = "1_main.jpg"
-var prepTime = 10
-var cookTime = 15
+var prepTime = 20
+var cookTime = 5
 var todaysServings = defaultServings
-var recipeDescription = "The lemon basil butter sauce will knock your socks off! And the best part? You can have this dish on your dinner table in less than 30 minutes!"
+var recipeDescription = "Today’s recipe puts a Southern twist on tacos. The blackening powder gives the catfish a subtle kick. The lime and garlic crema is simple and it balances out the kick of the fish. We recommend fresh cooked corn tortillas if you can get your hands on them, but if not – any kind of taco or tortilla will do.\n\nIf you have a cast iron pan, you’re going to want to get it out for this – it’s the secret to the best blackened catfish – but if you don’t, any old pan will work. Whatever type you use, get it as hot as you can. Whenever you think it’s hot enough, get it even hotter! \n\nOnce the fish is cooked throw it all together and enjoy. Watch out, this dinner can get messy! Share your pictures afterwards – we’re looking for the people who managed to get messiest while eating. Enjoy!"
 
 
 // This array needs to be pulled from the database instead of filled in here. 
@@ -43,3 +43,8 @@ let contentWords = ["Cover both sides of catfish with blackening powder and set 
 let contentImages = ["1_1", "1_2", "1_3", "1_4", "1_5", "1_6", "1_7", "1_8", "1_9", "1_10", "1_11", "1_12"]
 
 
+////  There's probably a better way to do this...
+// Ingredients for Today's Recipe
+// let ingredientsForToday = []
+// let ingredientQuantityforToday = []
+// let ingredientUnitsForToday = []
