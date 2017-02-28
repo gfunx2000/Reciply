@@ -24,7 +24,7 @@ class TodayViewController: UIViewController {
     override func viewDidLoad() {
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.shouldRotate = 0 // or false to disable rotation
+        appDelegate.shouldRotate = false // or false to disable rotation
         
         
         // This sets the labels for the page to show the current day's information

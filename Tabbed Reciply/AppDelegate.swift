@@ -14,10 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    var shouldRotate = 1
+    var shouldRotate = false
     
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
-        if shouldRotate == 1 {
+        if shouldRotate {
             return .landscape
         }
         else {

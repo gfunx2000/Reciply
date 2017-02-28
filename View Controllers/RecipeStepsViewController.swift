@@ -17,7 +17,10 @@ class RecipeStepViewController: UIViewController, UIPageViewControllerDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
         createPageViewController()
-
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.shouldRotate = true
+        
     }
     
     private func createPageViewController() {
