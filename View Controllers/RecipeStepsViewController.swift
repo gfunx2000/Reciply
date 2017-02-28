@@ -72,6 +72,7 @@ class RecipeStepViewController: UIViewController, UIPageViewControllerDataSource
             let pageItemController = self.storyboard!.instantiateViewController(withIdentifier: "ItemController") as! PageItemController
             pageItemController.itemIndex = itemIndex
             pageItemController.imageName = contentImages[itemIndex]
+            pageItemController.labelName = contentWords[itemIndex]
             return pageItemController
         }
         

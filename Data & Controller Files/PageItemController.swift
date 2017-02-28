@@ -9,9 +9,13 @@
 import UIKit
 
 class PageItemController: UIViewController {
-    
+ 
+    // Variables that hold the names for the recipe step images and instructions
     var itemIndex: Int = 0
-    var imageName: String = "" {
+    var imageName: String = ""
+    var labelName: String = ""
+        
+        {
         
         didSet {
             
@@ -22,12 +26,15 @@ class PageItemController: UIViewController {
         }
     }
     
-    @IBOutlet var contentImageView: UIImageView?
+    @IBOutlet var contentImageView: UIImageView? // Recipe picture
     
+    @IBOutlet weak var contentLabelView: UILabel! // Recipe Instructions
+    
+    // Sets the image and label to the current variables
     override func viewDidLoad() {
         super.viewDidLoad()
         contentImageView!.image = UIImage(named: imageName)
-        // Add in things about text here
+        contentLabelView!.text = labelName
     }
     
 }
