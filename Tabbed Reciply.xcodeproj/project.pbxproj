@@ -42,15 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FC0E4C701E6540C5009C6C5F /* PageItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageItemController.swift; path = Data/PageItemController.swift; sourceTree = "<group>"; };
+		FC0E4C701E6540C5009C6C5F /* PageItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageItemController.swift; path = "Data & Controller Files/PageItemController.swift"; sourceTree = "<group>"; };
 		FC0E4C721E65422A009C6C5F /* RecipeStepsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipeStepsViewController.swift; path = "View Controllers/RecipeStepsViewController.swift"; sourceTree = "<group>"; };
 		FC66C3171E61350900D53789 /* GroceryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroceryListViewController.swift; path = "View Controllers/GroceryListViewController.swift"; sourceTree = "<group>"; };
 		FC66C31B1E61353600D53789 /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodayViewController.swift; path = "View Controllers/TodayViewController.swift"; sourceTree = "<group>"; };
 		FC66C3201E61537E00D53789 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleViewController.swift; path = "View Controllers/ScheduleViewController.swift"; sourceTree = "<group>"; };
-		FC66C3221E61572900D53789 /* TodaysMealData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodaysMealData.swift; path = Data/TodaysMealData.swift; sourceTree = "<group>"; };
-		FC66C3241E61573700D53789 /* NextWeekData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NextWeekData.swift; path = Data/NextWeekData.swift; sourceTree = "<group>"; };
-		FC66C3261E61575A00D53789 /* ThisWeekData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThisWeekData.swift; path = Data/ThisWeekData.swift; sourceTree = "<group>"; };
-		FC66C3291E6157B200D53789 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserData.swift; path = Data/UserData.swift; sourceTree = "<group>"; };
+		FC66C3221E61572900D53789 /* TodaysMealData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodaysMealData.swift; path = "Data & Controller Files/TodaysMealData.swift"; sourceTree = "<group>"; };
+		FC66C3241E61573700D53789 /* NextWeekData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NextWeekData.swift; path = "Data & Controller Files/NextWeekData.swift"; sourceTree = "<group>"; };
+		FC66C3261E61575A00D53789 /* ThisWeekData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThisWeekData.swift; path = "Data & Controller Files/ThisWeekData.swift"; sourceTree = "<group>"; };
+		FC66C3291E6157B200D53789 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserData.swift; path = "Data & Controller Files/UserData.swift"; sourceTree = "<group>"; };
 		FC75CD921E576E1C002A29BF /* Tabbed Reciply.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tabbed Reciply.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC75CD951E576E1C002A29BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Tabbed Reciply/AppDelegate.swift"; sourceTree = "<group>"; };
 		FC75CD9C1E576E1C002A29BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
