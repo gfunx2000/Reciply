@@ -37,4 +37,12 @@ class PageItemController: UIViewController {
         contentLabelView!.text = labelName
     }
     
+    @IBAction func exitButton(_ sender: UIButton) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.shouldRotate = false // sets page back to portrait
+        self.view.window!.rootViewController?.dismiss(animated: true, completion: nil) // dismisses view controller back to navigation page
+    }
+    
+    
+    
 }

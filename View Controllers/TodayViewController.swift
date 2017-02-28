@@ -24,8 +24,8 @@ class TodayViewController: UIViewController {
     override func viewDidLoad() {
         
         // Set the page to rotate back to portrait after coming out of Recipe Steps
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.shouldRotate = false
+//        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+//        appDelegate.shouldRotate = false
         
         
         // This sets the labels for the page to show the current day's information
