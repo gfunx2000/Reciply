@@ -6,18 +6,20 @@
 //  Copyright © 2017 Joseph Salmond. All rights reserved.
 //
 
+
 import UIKit
 
 class RecipeStepViewController: UIViewController, UIPageViewControllerDataSource {
     
-
+    
     private var pageViewController: UIPageViewController?
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         createPageViewController()
         
+        // Sets the page to landscape for Recipe Steps
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.shouldRotate = true
         
@@ -40,7 +42,7 @@ class RecipeStepViewController: UIViewController, UIPageViewControllerDataSource
         pageViewController!.didMove(toParentViewController: self)
     }
     
-
+    
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
@@ -83,5 +85,5 @@ class RecipeStepViewController: UIViewController, UIPageViewControllerDataSource
     func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
         return 0
     }
-
+    
 }

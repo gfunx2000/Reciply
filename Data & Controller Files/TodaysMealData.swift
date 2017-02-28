@@ -22,7 +22,7 @@ var todaysServings = defaultServings
 var recipeDescription = "Today’s recipe puts a Southern twist on tacos. The blackening powder gives the catfish a subtle kick. The lime and garlic crema is simple and it balances out the kick of the fish. We recommend fresh cooked corn tortillas if you can get your hands on them, but if not – any kind of taco or tortilla will do.\n\nIf you have a cast iron pan, you’re going to want to get it out for this – it’s the secret to the best blackened catfish – but if you don’t, any old pan will work. Whatever type you use, get it as hot as you can. Whenever you think it’s hot enough, get it even hotter! \n\nOnce the fish is cooked throw it all together and enjoy. Watch out, this dinner can get messy! Share your pictures afterwards – we’re looking for the people who managed to get messiest while eating. Enjoy!"
 
 
-// This array needs to be pulled from the database instead of filled in here. 
+// This array needs to be pulled from the database instead of filled in here.
 // This is the array that has the text for each of the steps in Today's Recipe
 let contentWords = ["Cover both sides of catfish with blackening powder and set aside for 20 minutes",
                     "Zest lime with grater and cut garlic into small pieces",
