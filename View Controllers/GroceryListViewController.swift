@@ -6,7 +6,54 @@
 //  Copyright © 2017 Joseph Salmond. All rights reserved.
 //
 
-//import UIKit
+import UIKit
+
+class GroceryListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    let groceryItems = ["Carrots", "Peas", "Cheese", "Milk", "Bread"]
+    
+    
+    internal func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return groceryItems.count
+        
+    }
+    
+
+    internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "Cell")
+        
+        cell.textLabel?.text = groceryItems[indexPath.row]
+        
+        return cell
+        
+    }
+    
+    
+    
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 //
 //class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 //
