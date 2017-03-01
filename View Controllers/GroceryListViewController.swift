@@ -10,7 +10,7 @@ import UIKit
 
 class GroceryListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let groceryItems = ["Carrots", "Peas", "Cheese", "Milk", "Bread"]
+    var groceryItems = ["Carrots", "Peas", "Cheese", "Milk", "Bread"]
     
     
     internal func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -28,6 +28,15 @@ class GroceryListViewController: UIViewController, UITableViewDelegate, UITableV
         
         return cell
         
+    }
+    
+    internal func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == UITableViewCellEditingStyle.delete
+        {
+            groceryItems.remove(at: indexPath.row) // removes from Table View but still leaves in array. Do we want to change this?
+            tableView.reloadData()
+        }
     }
     
     
