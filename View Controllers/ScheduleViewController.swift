@@ -8,6 +8,57 @@
 
 import UIKit
 
+class ScheduleViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    // These arrays should actualyl be coming from the data section
+    var thisWeekMeals = ["Meal 1", "Meal 2", "Meal 3", "Meal 4", "Meal 5", "Meal 6", "Meal 7"]
+    var thisWeekImages = ["1_main.jpg", "1_2.jpg", "1_3.jpg", "1_4.jpg", "1_5.jpg", "1_6.jpg", "1_7.jpg"]
+    
+    
+    internal func numberOfSections(in tableView: UITableView) -> Int {
+        
+        return 1
+        
+    }
+    
+    
+    internal func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return thisWeekMeals.count
+        
+    }
+    
+    
+    internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell2 = tableView.dequeueReusableCell(withIdentifier: "Cell2", for: indexPath) as! ScheduleTableViewCell
+        
+        let mealNumber = thisWeekMeals[indexPath.row]
+        cell2.mealName?.text = mealNumber
+        cell2.mealImage?.image = UIImage(named: thisWeekImages[indexPath.row])
+        //cell2.textLabel?.text = thisWeekMeals[indexPath.row]
+        
+        
+        return cell2
+        
+    }
+    
+
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+}
+
+
+
+
+
 
 //default starting point
 
