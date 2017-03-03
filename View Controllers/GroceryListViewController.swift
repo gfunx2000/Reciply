@@ -10,6 +10,7 @@ import UIKit
 
 class GroceryListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    
     // These arrays should actualyl be coming from the data section
     var groceryItems = [["PRODUCE", "Carrots", "Peas"], ["DAIRY", "Cheese", "Milk"], ["BAKERY", "Bread", "Rolls", "Cake"]]
     
@@ -17,7 +18,6 @@ class GroceryListViewController: UIViewController, UITableViewDelegate, UITableV
     internal func numberOfSections(in tableView: UITableView) -> Int {
         
         return 3
-        
     }
     
     
@@ -27,21 +27,17 @@ class GroceryListViewController: UIViewController, UITableViewDelegate, UITableV
         
     }
     
-
+    
     internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "Cell")
-        
         cell.textLabel?.text = groceryItems[indexPath.section][indexPath.row + 1]
         
         return cell
-        
     }
     
+    
     internal func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        
-        if editingStyle == UITableViewCellEditingStyle.delete
-        {
+        if editingStyle == UITableViewCellEditingStyle.delete {
             groceryItems.remove(at: indexPath.row) // removes from Table View but still leaves in array. Do we want to change this?
             tableView.reloadData()
         }
@@ -51,19 +47,18 @@ class GroceryListViewController: UIViewController, UITableViewDelegate, UITableV
     internal func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
         return groceryItems[section][0]
-        
     }
     
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
     
 }
 

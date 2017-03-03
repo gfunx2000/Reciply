@@ -9,7 +9,8 @@
 import UIKit
 
 class PageItemController: UIViewController {
- 
+    
+    
     // Variables that hold the names for the recipe step images and instructions
     var itemIndex: Int = 0
     var imageName: String = ""
@@ -18,23 +19,23 @@ class PageItemController: UIViewController {
         {
         
         didSet {
-            
             if let imageView = contentImageView {
                 imageView.image = UIImage(named: imageName)
             }
-            
         }
     }
     
-    @IBOutlet var contentImageView: UIImageView? // Recipe picture
     
+    @IBOutlet var contentImageView: UIImageView? // Recipe picture
     @IBOutlet weak var contentLabelView: UILabel! // Recipe Instructions
+    
     
     // Sets the image and label to the current variables
     override func viewDidLoad() {
         super.viewDidLoad()
         contentImageView!.image = UIImage(named: imageName)
         contentLabelView!.text = labelName
+        
     }
     
     @IBAction func exitButton(_ sender: UIButton) {
@@ -42,7 +43,6 @@ class PageItemController: UIViewController {
         appDelegate.shouldRotate = false // sets page back to portrait
         self.view.window!.rootViewController?.dismiss(animated: true, completion: nil) // dismisses view controller back to navigation page
     }
-    
     
     
 }

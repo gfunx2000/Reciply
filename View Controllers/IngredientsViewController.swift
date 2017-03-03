@@ -10,10 +10,9 @@ import UIKit
 
 // View Controller that controls the Ingredients page.
 class IngredientsViewController: UIViewController {
-
+    
     @IBAction func dismissIngredients(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
-
-
+    
 }

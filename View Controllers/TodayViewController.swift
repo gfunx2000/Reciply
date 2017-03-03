@@ -19,15 +19,7 @@ class TodayViewController: UIViewController {
     @IBOutlet weak var servingsLabel: UILabel!
     @IBOutlet weak var recipeDescriptionLabel: UILabel!
     
-    
-    
     override func viewDidLoad() {
-        
-        // Set the page to rotate back to portrait after coming out of Recipe Steps
-//        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-//        appDelegate.shouldRotate = false
-        
-        
         // This sets the labels for the page to show the current day's information
         // The data for this comes from TodaysMealData
         super.viewDidLoad()
@@ -38,10 +30,6 @@ class TodayViewController: UIViewController {
         servingsLabel.text = String(todaysServings)
         recipeDescriptionLabel.text = recipeDescription
     }
-    
-    
-    
-    
     
 }
 

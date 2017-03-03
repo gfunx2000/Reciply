@@ -12,9 +12,7 @@ class ScheduleTableViewCell: UITableViewCell {
     
     
     @IBOutlet weak var mealImage: UIImageView!
-    
     @IBOutlet weak var mealName: UILabel!
-    
     
 
     override func awakeFromNib() {
@@ -28,4 +26,5 @@ class ScheduleTableViewCell: UITableViewCell {
 //        // Configure the view for the selected state
 //    }
 
+    
 }

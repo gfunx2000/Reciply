@@ -10,6 +10,7 @@
 		FC0E4C711E6540C5009C6C5F /* PageItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0E4C701E6540C5009C6C5F /* PageItemController.swift */; };
 		FC0E4C731E65422A009C6C5F /* RecipeStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0E4C721E65422A009C6C5F /* RecipeStepsViewController.swift */; };
 		FC178F021E68F0B500CE81D5 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC178F011E68F0B500CE81D5 /* ScheduleTableViewCell.swift */; };
+		FC178F041E69315800CE81D5 /* OuterScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC178F031E69315700CE81D5 /* OuterScheduleViewController.swift */; };
 		FC5AA5CD1E65E5C000F85462 /* IngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5AA5CC1E65E5C000F85462 /* IngredientsViewController.swift */; };
 		FC66C3181E61350900D53789 /* GroceryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C3171E61350900D53789 /* GroceryListViewController.swift */; };
 		FC66C31C1E61353600D53789 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C31B1E61353600D53789 /* TodayViewController.swift */; };
@@ -47,6 +48,7 @@
 		FC0E4C701E6540C5009C6C5F /* PageItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageItemController.swift; path = "Data & Controller Files/PageItemController.swift"; sourceTree = "<group>"; };
 		FC0E4C721E65422A009C6C5F /* RecipeStepsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipeStepsViewController.swift; path = "View Controllers/RecipeStepsViewController.swift"; sourceTree = "<group>"; };
 		FC178F011E68F0B500CE81D5 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleTableViewCell.swift; path = "View Controllers/ScheduleTableViewCell.swift"; sourceTree = "<group>"; };
+		FC178F031E69315700CE81D5 /* OuterScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OuterScheduleViewController.swift; path = "View Controllers/OuterScheduleViewController.swift"; sourceTree = "<group>"; };
 		FC5AA5CC1E65E5C000F85462 /* IngredientsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IngredientsViewController.swift; path = "View Controllers/IngredientsViewController.swift"; sourceTree = "<group>"; };
 		FC66C3171E61350900D53789 /* GroceryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroceryListViewController.swift; path = "View Controllers/GroceryListViewController.swift"; sourceTree = "<group>"; };
 		FC66C31B1E61353600D53789 /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodayViewController.swift; path = "View Controllers/TodayViewController.swift"; sourceTree = "<group>"; };
@@ -94,15 +96,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FC66C31E1E61356000D53789 /* View Controllers */ = {
+		FC178F051E693FD700CE81D5 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				FC178F031E69315700CE81D5 /* OuterScheduleViewController.swift */,
+				FC66C3201E61537E00D53789 /* ScheduleViewController.swift */,
+				FC178F011E68F0B500CE81D5 /* ScheduleTableViewCell.swift */,
+			);
+			name = Schedule;
+			sourceTree = "<group>";
+		};
+		FC178F061E693FF700CE81D5 /* Today's Recipe */ = {
 			isa = PBXGroup;
 			children = (
 				FC66C31B1E61353600D53789 /* TodayViewController.swift */,
 				FC5AA5CC1E65E5C000F85462 /* IngredientsViewController.swift */,
-				FC66C3201E61537E00D53789 /* ScheduleViewController.swift */,
-				FC66C3171E61350900D53789 /* GroceryListViewController.swift */,
 				FC0E4C721E65422A009C6C5F /* RecipeStepsViewController.swift */,
 				FC0E4C701E6540C5009C6C5F /* PageItemController.swift */,
+			);
+			name = "Today's Recipe";
+			sourceTree = "<group>";
+		};
+		FC66C31E1E61356000D53789 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC178F061E693FF700CE81D5 /* Today's Recipe */,
+				FC178F051E693FD700CE81D5 /* Schedule */,
+				FC66C3171E61350900D53789 /* GroceryListViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -130,7 +150,6 @@
 		FC75CD891E576E1C002A29BF = {
 			isa = PBXGroup;
 			children = (
-				FC178F011E68F0B500CE81D5 /* ScheduleTableViewCell.swift */,
 				FC66C3281E61576200D53789 /* Data */,
 				FC66C31E1E61356000D53789 /* View Controllers */,
 				FC66C31F1E61359A00D53789 /* Storyboards */,
@@ -320,6 +339,7 @@
 				FC66C32A1E6157B200D53789 /* UserData.swift in Sources */,
 				FC66C3251E61573700D53789 /* NextWeekData.swift in Sources */,
 				FC66C3231E61572900D53789 /* TodaysMealData.swift in Sources */,
+				FC178F041E69315800CE81D5 /* OuterScheduleViewController.swift in Sources */,
 				FC0E4C731E65422A009C6C5F /* RecipeStepsViewController.swift in Sources */,
 				FC66C3211E61537E00D53789 /* ScheduleViewController.swift in Sources */,
 			);
