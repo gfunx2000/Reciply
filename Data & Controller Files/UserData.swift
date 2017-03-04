@@ -13,4 +13,4 @@ import Foundation
 
 // This is the default number of servings for the user. It is set in the settings page
 // The default serving is the number of servings that every meal is set for unless the user goes in and changes it
-var defaultServings = 4
+var defaultServings = 4 // This should probably change to userDefault

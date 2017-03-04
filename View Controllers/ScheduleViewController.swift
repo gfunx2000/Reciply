@@ -8,97 +8,63 @@
 
 import UIKit
 
-
-
+// Controls the actual table view linked out to by the container in OuterScheduleViewController
 class ScheduleViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
   
+    @IBOutlet var tableView: UITableView!
+    
     
     internal func numberOfSections(in tableView: UITableView) -> Int {
+        
         return 1
+        
     }
     
-    
+    // Sets the number of rows to match the number of meals. Should usually be 7
     internal func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return thisWeekMeals.count
+        
     }
     
-    
+    // Sets the table view to show the meal name and image for the current week (set in OuterScheduleViewController) in each cell.
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell2 = tableView.dequeueReusableCell(withIdentifier: "Cell2", for: indexPath) as! ScheduleTableViewCell
         let mealNumber = currentMeals[indexPath.row]
+        
         cell2.mealName?.text = mealNumber
         cell2.mealImage?.image = UIImage(named: currentImages[indexPath.row])
         //cell2.textLabel?.text = thisWeekMeals[indexPath.row]
         
         return cell2
+        
     }
     
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(ScheduleViewController.actOnNotification), name: NSNotification.Name(rawValue:notificationKey), object: nil) // Listens for notification from the notify func in OuterScheduleViewController to update the table view
+        
+    }
+    
+    
+    // reloads the table when it receives notification that the this week or next week button was pressed
+    func actOnNotification() {
+        
+        self.tableView.reloadData()
+        
     }
     
     
     override func didReceiveMemoryWarning() {
+        
         super.didReceiveMemoryWarning()
+        
     }
     
     
 }
 
 
-
-
-
-
-//default starting point
-
-// Move this to a data file but...
-// Arrays...
-// thisWeekMealPicturesArray, thisWeekMealNamesArray
-// nextWeekMealPicturesArray, nextWeekMealNamesArray
-// Should arrays of details for detail views also go here???
-// that would be thisWeekPrepTimeArray, thisWeekCookTimeArray, thisWeekServingsArray (all default except for user changes), thisWeekDescriptionArray
-// and nextWeekPrepTimeArray, nextWeekCookTimeArray, nextWeekServingsArray (all default except for user changes), nextWeekDescriptionArray
-
-
-
-//func buttonRightPressed() {
-//    buttonRight = enabled
-//    buttonleft = disabled
-//    buttonRight.alpha = 1
-//    buttonLeft.alpha = 0.5
-//    tableView displays nextWeekArray
-//}
-//
-//func buttonLeftPressed() {
-//    buttonLeft = enabled
-//    buttonRight = disabled
-//    buttonLeft.alpha = 1
-//    buttonRight.alpha = 0.5
-//    tableView displays thisWeekArray
-//}
-//
-//// default starting point (viewDidLoad? or sooner?)...
-//buttonLeftPressed()
-//
-//
-//if buttonRight pressed {
-//    buttonRightPressed()
-//}
-//
-//
-//if buttonLeft pressed {
-//    buttonLeftPressed()
-//}
-
-//// Turns Day buttons to faded out if not cooking that day
-//// Need to add a function that adjust all of this in the array if button is touched
-//// Need to make a version of this for each week's array
-//for all days {
-//    if cookThisDay... array == TRUE {
-//        dayButton.alpha = 1
-//    } else {
-//        dayButton.alpha = 0.5
-//    }
-//}

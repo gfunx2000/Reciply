@@ -19,10 +19,15 @@ class PageItemController: UIViewController {
         {
         
         didSet {
+            
             if let imageView = contentImageView {
+                
                 imageView.image = UIImage(named: imageName)
+                
             }
+            
         }
+        
     }
     
     
@@ -32,6 +37,7 @@ class PageItemController: UIViewController {
     
     // Sets the image and label to the current variables
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         contentImageView!.image = UIImage(named: imageName)
         contentLabelView!.text = labelName
@@ -39,9 +45,11 @@ class PageItemController: UIViewController {
     }
     
     @IBAction func exitButton(_ sender: UIButton) {
+        
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.shouldRotate = false // sets page back to portrait
         self.view.window!.rootViewController?.dismiss(animated: true, completion: nil) // dismisses view controller back to navigation page
+        
     }
     
     

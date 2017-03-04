@@ -11,19 +11,31 @@
 
 import Foundation
 
-// It has arrays that contain the names and pictures for the week's recipes
-// It currently also contains the data for each recipe's detail view in an array for the week.
-// I think that there is a better way to do this
-// We may also want to use this area to save if each day is on or off and the servings for each meal
-// If we do that, we will also need to push this data from "next week" into "this week" when the week switches, so that the user's data is saved.
+// We will need to push this data into "this week" when the week switches, so that the user's data is saved and then refill this with the new "this week" data
 
-//// The name and image title for each day of the week
-// nextWeekMealPicturesArray
-// nextWeekMealNamesArray
+// Information for main schedule view for next week
+// Array of the name of each recipe for next week
+var nextWeekMeals = ["Asiago Chicken Pasta", "Braised Beef", "Broccoli Chicken Pizza", "Honey Garlic Shrimp", "Mediterranean Chicken", "Lentil, Cilantro, and Lime Tacos", "Mahi Mahi with Mango Salsa"]
+
+// Array of the main image for each meal for next week
+var nextWeekImages = ["8_main.jpg,", "9_main.jpg", "10_main.jpg", "11_main.jpg", "12_main.jpg", "13_main.jpg", "14_main.jpg"]
+
+// Array of booleans for if user is cooking each meal next week. True = They are cooking. False = They have selected not to cook
+// All are set to True by default
+var nextWeekIsCooking = [true, true, true, true, true, true, true] // Should this be a userDefault to save to user's phone or push to database? Or both?
 
 
-// nextWeekCookThisDayArray (boolean array with default to TRUE for each day unless user turns off)
-// nextWeekPrepTimeArray
-// nextWeekCookTimeArray
-// nextWeekServingsArray (all default except for user changes)
-// nextWeekDescriptionArray
+
+// Data for detail view of each meal for this week
+// thisWeekPrepTimeArray
+
+// thisWeekCookTimeArray
+
+// thisWeekServingsArray (all default except for user changes)
+
+// thisWeekDescriptionArray
+
+
+
+
+
