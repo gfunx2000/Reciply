@@ -25,6 +25,8 @@
 		FC75CDA21E576E1C002A29BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC75CDA01E576E1C002A29BF /* LaunchScreen.storyboard */; };
 		FC75CDAD1E576E1C002A29BF /* ReciplyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC75CDAC1E576E1C002A29BF /* ReciplyTests.swift */; };
 		FC75CDB81E576E1D002A29BF /* ReciplyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC75CDB71E576E1D002A29BF /* ReciplyUITests.swift */; };
+		FCC1010A1E6B52B800EACBA7 /* IngredientCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC101091E6B52B800EACBA7 /* IngredientCollectionViewCell.swift */; };
+		FCC1010C1E6B547F00EACBA7 /* IngredientCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC1010B1E6B547F00EACBA7 /* IngredientCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		FC75CDB31E576E1D002A29BF /* ReciplyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReciplyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC75CDB71E576E1D002A29BF /* ReciplyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReciplyUITests.swift; path = ReciplyUITests/ReciplyUITests.swift; sourceTree = "<group>"; };
 		FC75CDB91E576E1D002A29BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = ReciplyUITests/Info.plist; sourceTree = "<group>"; };
+		FCC101091E6B52B800EACBA7 /* IngredientCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IngredientCollectionViewCell.swift; path = "View Controllers/IngredientCollectionViewCell.swift"; sourceTree = "<group>"; };
+		FCC1010B1E6B547F00EACBA7 /* IngredientCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IngredientCollectionViewController.swift; path = "View Controllers/IngredientCollectionViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,8 @@
 		FC75CD891E576E1C002A29BF = {
 			isa = PBXGroup;
 			children = (
+				FCC101091E6B52B800EACBA7 /* IngredientCollectionViewCell.swift */,
+				FCC1010B1E6B547F00EACBA7 /* IngredientCollectionViewController.swift */,
 				FC66C3281E61576200D53789 /* Data */,
 				FC66C31E1E61356000D53789 /* View Controllers */,
 				FC66C31F1E61359A00D53789 /* Storyboards */,
@@ -332,8 +338,10 @@
 				FC0E4C711E6540C5009C6C5F /* PageItemController.swift in Sources */,
 				FC66C3271E61575A00D53789 /* ThisWeekData.swift in Sources */,
 				FC178F021E68F0B500CE81D5 /* ScheduleTableViewCell.swift in Sources */,
+				FCC1010A1E6B52B800EACBA7 /* IngredientCollectionViewCell.swift in Sources */,
 				FC66C31C1E61353600D53789 /* TodayViewController.swift in Sources */,
 				FC66C3181E61350900D53789 /* GroceryListViewController.swift in Sources */,
+				FCC1010C1E6B547F00EACBA7 /* IngredientCollectionViewController.swift in Sources */,
 				FC75CD961E576E1C002A29BF /* AppDelegate.swift in Sources */,
 				FC5AA5CD1E65E5C000F85462 /* IngredientsViewController.swift in Sources */,
 				FC66C32A1E6157B200D53789 /* UserData.swift in Sources */,
